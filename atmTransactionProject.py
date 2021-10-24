@@ -129,7 +129,7 @@ def transactions(selectedOperation):
 
                 else:
                     amountToDepositFormated = format(amountToDepositUnformated, ",.2f")
-                    confirmDeposit = input("Confirm deposit of "+str(amountToDepositFormated)+" ?(y/n)")
+                    confirmDeposit = input("Confirm deposit of Ksh. "+str(amountToDepositFormated)+" ?(y/n)")
 
                     if confirmDeposit.upper() == "Y" or confirmDeposit.upper() == "YES":
                         newBalanceUnformatted = balanceUnformatted + amountToDepositUnformated
