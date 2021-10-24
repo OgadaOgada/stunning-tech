@@ -1,0 +1,6 @@
+This is a fresh start. I have the following to do:
+1. UX
+2. Python
+3. Labs
+I'm not overwriting anything, I'm just appending some new lines.
+I surely have so much to append!
