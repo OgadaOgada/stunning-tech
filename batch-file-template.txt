@@ -1,0 +1,2 @@
+@py path of the .py file %*
+@pause

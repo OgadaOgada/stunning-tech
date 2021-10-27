@@ -1,3 +1,4 @@
+#! python3
 import getpass
 # dictionary {"username":"trial","pin":0000,"balance":{"Ksh":"140","USD":"0"}}
 bankCustomers = {"collince": [1000, 2000.92800],
