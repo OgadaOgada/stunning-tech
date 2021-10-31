@@ -11,7 +11,7 @@ def myFunct(list1, list2):
     print()
     print("List 1: "+str(list1))
     print("List 2: "+str(list2)+"\n")
-    print("List 3: "+str(list3))
+    print("List 3: "+str(list3)+"\n")
     return
 
 start1 = int(input("list one start num: "))
