@@ -1,9 +1,11 @@
 # hello_reportlab.py
 from reportlab.pdfgen import canvas
+from reportlab.pdfbase.ttfonts import TTFont
+from reportlab.pdfbase import pdfmetrics
 
 filename = "myReportlab.pdf"
 documentTitle = "This is My Document Title"
-title = "Collince Technologies"
+title = "My PDF Title here"
 subtitle = "We run the ICTR"
 textlines = [
     """Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
@@ -37,14 +39,12 @@ for font in pdf.getAvailableFonts():
     print(font)
 
 # register new font
-from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.pdfbase import pdfmetrics
 
 pdfmetrics.registerFont(
-    TTFont('abc',)
+    TTFont("abc","IBMPlexMono-Light.ttf")
 )
-
-pdf.drawString(250,800, title)
+pdf.setFont("abc", 18)
+pdf.drawString(250,750, title)
 
 drawRuler(pdf)
 
