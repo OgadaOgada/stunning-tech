@@ -7,7 +7,7 @@ largeText = "All my large Text should appear here. Well, I'll find all the vowel
 
 vowelsLower = re.compile(r"[aeiou]")
 vowelsAll = re.compile(r"[aeiou]",re.IGNORECASE)
-vowelsAllCase = re.compile(r"[aeiou]",re.I) #smae as above, ignore case
+vowelsAllCase = re.compile(r"[aeiou]",re.I) #same as above, ignore case
 
 lowerMo = vowelsLower.findall(largeText)
 allMo = vowelsAll.findall(largeText)
