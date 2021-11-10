@@ -1,6 +1,7 @@
 #! python3
 import re, pyperclip
 
+# USING PhoneDirectory.pdf INT THE SAME DIR SAMPLE TO DO THIS
 #create regex for phone numbers
 
 myPhoneRegex = re.compile(r"""
@@ -48,7 +49,21 @@ with open ("emailAddresses.txt","w") as emailAdressFile:
     for emailAddress in extractedEmail:
         # allEmailAddresses.append(emailAddress)
         emailAdressFile.write(emailAddress+"\n")
+        # print(emailAddress)
     print("Email addresses file created successfully")
         
-# print(allPhoneNumbers)
+
+for phoneNumber in extractedPhone:
+    allPhoneNumbers.append(phoneNumber)
+
+for emailAddress in extractedEmail:
+    allEmailAddresses.append(emailAddress)
+
+result = ("\n".join(allPhoneNumbers)+"\n"+"\n".join(allEmailAddresses))
+# print(result)
+pyperclip.copy(result)
+# print("\n".join(allPhoneNumbers))
+# # print(allPhoneNumbers)
+# print("\n".join(allEmailAddresses))
 # print(extractedEmail)
+
