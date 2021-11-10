@@ -1,0 +1,524 @@
+Sample Phone Directory
+AAA Concrete
+Business: 808-779-1466
+ABC Learning Center
+Business: 801-557-2819
+ABC Learning Center-Downtown
+Branch
+Business: 801-997-4158
+Mark Adamson
+Home: 843-798-6698
+E-mail: madamson@sncn.net
+All Track International
+Business: 503-233-8335
+Fax: 503-233-0009
+Allison Andrews
+Home: 612-321-0047
+E-mail: AEA@anet.com
+Cellular: 612-393-0029
+Dustin Andrews
+Home: 612-321-0047
+E-mail: AEA@anet.com
+Cellular: 612-393-0029
+Elizabeth Ashton
+Home: 912-927-1215
+Autumn Industries, Inc.
+Fax: 228-986-5430
+Lucy Avdeenko
+Home: 207-363-5517
+Julie Bach
+Home: 412-565-9978
+E-mail: jules@att.com
+Derrick Baker
+E-mail: djb1@homenet.com
+Francis Baker
+Home: 915-562-2331
+E-mail: fbaker@elpaso.com
+Baldwin Entertainment
+Corporation
+Business: 773-242-6323
+Barclay Furniture
+Business: 910-634-4821
+Geoffrey Beckner
+Home: 843-749-0938
+Fax: (803) 522-5774
+Kyle Bell
+Kathleen Bently
+Home: 404-864-2522
+Joseph Bernstein
+Home: 800-555-0909
+Timothy Billings
+Home: 303-671-3232
+Fax: (303) 283-2931
+Bottling Unlimited
+Business: 800-975-1524
+Business Information Systems
+Business: 800-948-5212
+Fax: 702-939-2999
+Jason Campbell
+Home: 706-435-8511
+Carter Pharmaceuticals, Inc.
+Business: 302-798-6260
+Charleston Development
+Corporation
+Business: 843-498-5569
+City Insurance Company
+Business: 402-343-7700
+Zachery Clover
+Home: 206-587-3010
+Autumn Compton
+Home: 615-255-7410
+Fax: (901) 765-4642
+Agnes Cone
+Home: 843-555-7623
+Benjiman Connor
+Home: 804-741-5241
+Consulting Group, Ltd.
+Business: 404-977-5810
+E-mail: consultgrp@netcore.com
+Cotton Clothing, Inc.
+Business: 206-594-6648
+Andrew Crenshaw
+Home: 212-545-0010
+Ellen Crenshaw
+Home: 212-545-0010
+Catlin Daly
+Home: 415-749-3214
+E-mail: dalycatren@msn.com
+Fax: 702-939-2999
+Clara Daniels
+Home: 203-778-2523
+Davenport Creamery
+Business: 802-697-1214
+Sean Davenport
+Home: 305-326-1551
+E-mail: sad@net.com
+Davis & Johnson
+Pharmaceuticals
+Business: 312-641-0332
+Fax: 312-265-7700
+Davis & Simms
+Business: 908-648-2111
+Lisa Davis
+Home: 819-833-9600
+Diamond Import & Export
+Business: 801-323-1000
+Angela Diresta
+Home: 205-566-1254
+E-mail: adiresta@aol.net.com
+Cellular: 888-895-6321
+Joseph Diresta
+Home: 205-566-1254
+E-mail: JPdiresta@net.com
+Cellular: 888-895-6321
+Ryan Dorrion
+Home: 336-725-6397
+E-mail: dorrion.ryan@aotw.com
+Collin Dubose
+Home: 505-265-1120
+Nicole Dustin
+Home: 225-765-3314
+Dynamic Engineering
+Business: 843-555-4356
+Anthony Ellis
+Home: 603-733-9393
+Fax: (843) 786-7200
+Elohim Synagogue Melissa Elzy
+Home: 304-754-2217
+Heather Faulkner
+Home: 409-884-5411
+Jeffrey Ferber George Finley
+Home: 414-276-9162
+Fax: (302) 658-1870
+Foreign Financial Group, Ltd.
+Business: 401-949-5454
+Francis R. Heidt Memorial
+Hospital
+Business: 612-482-3329
+E-mail: frhhospital@amc.org
+Paul Frantz
+Home: 216-432-5572
+Fax: 216-721-5300
+Garcia Family Dentistry
+Business: 307-418-0057
+Fax: 307-418-0058
+Jill Garrett
+Home: 203-421-8712
+Katherine Garrity
+Home: 843-772-0707
+Stanley Garrity
+Home: 843-772-0707
+Frederic Gaskins
+Home: 503-895-6262
+Allison Goodson
+Home: 843-823-2526
+E-mail: dag@homeplace.com
+Harry Goodson
+Home: 843-823-2526
+Jeffrey Goodson
+Home: 843-823-2526
+Betsy Graack
+Home: 973-733-1105
+Kristy Graham
+Home: 214-630-8834
+Graphic Images, Inc.
+Business: 816-549-2158
+Wade Grayson
+Home: 214-630-8834
+Dale Green
+Home: 270-157-9845
+Lisa Haas
+Home: 415-353-9157
+Alexander Hamilton
+Home: 541-998-7564
+Samantha Hart
+Home: 401-276-7777
+E-mail: sam.hart@walden.edu
+Fax: 401-253-2707
+Alan Hayes
+E-mail: ach@home.net
+Alan Hayes
+Fax: 503-233-0009
+Cole Hensley
+Home: 704-364-8828
+Fax: (919) 765-7355
+Robert Hernandez
+Home: 303-997-3301
+E-mail: rhernandez@net.com
+Cellular: 888-387-1211
+Fax: 312-923-1190
+Jackson Holt
+Home: 843-469-1218
+Laura Holt
+Home: 843-469-1218
+Alexander Horne
+Home: 802-771-4587
+E-mail: alex.horne@snet.net
+Travis Inman
+Home: 513-621-3702
+E-mail: trinman@cmsn.net
+Inman's Industrial Supply
+Business: 614-889-9565
+Dean Isley
+Home: 219-239-5177
+Claudia Ivery
+Home: 843-766-1578
+E-mail: claudia.ivery@mousenet.com
+Fax: 919-255-9865
+Yoshi Izzo
+Home: 202-537-6614
+Jefferson Manufacturing
+Business: 908-432-1185
+Richard Jefferson
+Home: 801-467-8999
+Gretchen Jones
+Home: 204-722-8417
+Fax: (919) 255-9865
+Terry Jones
+Home: 204-722-8417
+Hampton Judson
+Home: 312-655-8102
+Fax: 773-327-9921
+Lorrel Justin
+Home: 715-232-7154
+Phillip Keller
+Home: 808-395-5587
+Bebe Kemp
+Home: 843-723-0912
+E-mail: bdk@mbn.net
+Jennifer Kennick
+Home: 410-523-6671
+Fax: (410) 396-6209
+Marilyn Kessler
+Home: 617-695-3785
+David Korbin
+Home: 302-239-8722
+E-mail: dkorbin@allouette.com
+Jennifer Kovalak
+Home: 912-376-1125
+E-mail: JenAnne@Conelink.net
+Spencer Kovalak
+Home: 912-376-1125
+Marianne Lambert
+Home: 843-884-5609
+Roger Langley
+Home: 956-728-1597
+Lightning Air Transport
+Business: 404-323-6656
+Audrey Lorenz
+Home: 215-339-4120
+Fax: (919) 255-9865
+Kimberly Luton Joseph Mahoney
+Home: 603-474-8080
+Isabelle Matley
+Home: 843-559-4878
+E-mail: mig@homeweb.com
+Susan McDonald
+Home: 407-841-6679
+Marie McFarland
+Home: 360-922-2457
+Orla McGrann
+Home: 770-509-0487
+E-mail: orla.mcgrann@snet.net
+Fax: 401-253-2707
+Leslie McNally
+Home: 410-557-6438
+Martha Mellon
+Cellular: 203-555-0956
+Midland Banking Center
+Business: 501-227-3700
+Fax: 501-202-1839
+Midlands Historical Museum
+Business: 336-965-8520
+Cynthia Miller
+Home: 541-698-1208
+Otto Montgomery
+Home: 580-699-4521
+Virginia Morrison
+Home: 307-732-1589
+Mt. Olympus Medical Center
+Business: 416-934-3544
+David Murphy
+Home: 617-499-8814
+Margaret Murphy
+Home: 617-499-8814
+Nashville Healthcare
+Business: 615-327-1085
+Fax: 901-765-4642
+Porter Nelson
+Home: 619-235-9914
+E-mail: nelson.porter@comcore.net
+Fax: (316) 284-3663
+New Mexico Gas & Electric
+Business: 505-842-0111
+Lavern Nivens
+Home: 843-889-7478
+Marlena Nodason
+Home: 416-362-8457
+Dale Nolan
+Home: 604-730-2457
+North General Hospital
+Business: 860-242-9912
+Fax: 860-394-2322
+Oak City Symphony Orchestra
+Business: 316-284-2293
+Fax: 316-284-3663
+Chloe Ohar
+Home: 815-727-9976
+Oil One Distributor
+Business: 912-814-4102
+Fax: 912-226-8070
+Jacqueline O'Keefe
+Home: 508-665-9009
+Vivian Olson
+Home: 605-333-9947
+Barrett O'Malley
+Home: 336-288-9548
+Neil Osborne
+Home: 813-348-5518
+Cellular: revosborne@oldnet.com
+Outside Investments
+Business: 617-223-6369
+Grace Overstreet
+Home: 843-881-4799
+Kenneth Parker
+Home: 402-821-6954
+Cellular: 402-821-6954
+Madison Parker
+Home: 402-821-6954
+Cellular: 402-821-6954
+Partytime Rentals
+Business: 704-555-8994
+Mia Patras
+Home: 302-618-9874
+Chad Patterson
+Home: 404-257-9854
+Fax: (404) 633-7404
+Lane Pembroke
+Home: 607-257-8134
+Pennsylvania Glass & Paint
+Corporation
+Business: 888-387-2000
+Nancy Peters
+Campbell Phan
+Home: 404-971-2245
+Fax: (404) 527-7106
+Phillip's Drug Store
+Business: 404-983-4109
+Sidney Prescott
+Home: 617-426-8598
+William Quinn
+Home: 860-545-7154
+Keith Radcliffe
+Home: 503-295-4187
+Mohammed Rahman
+Home: 937-233-6266
+Scarlett Ray
+Home: 316-849-5147
+E-mail: KR8989@dbc.org
+RCS Corporation
+Business: 919-569-2369
+Fax: 919-255-9865
+Carl Rhodes
+Home: 618-222-9796
+E-mail: carl.rhodes@aolrc.com
+Jenny Rhodes
+Cellular: 843-566-1234
+Kyle Rhodes
+Home: 217-457-6628
+Mary Beth Richardson
+Home: 605-733-5840
+E-mail: MBRichardson@abc123.com
+Ginger Rosenberg
+Home: 212-423-5848
+Ira Rosenberg
+Home: 212-423-5848
+Fax: (212) 570-8625
+Harris Sadler
+Home: 804-569-6325
+Fax: (804) 342-1683
+Heidi Schapiro
+E-mail: heidi.schapiro@comcor.net
+Martin Schultz Monica Sharp
+Home: 312-997-5178
+Mary Simpson
+Home: 843-989-5256
+E-mail:
+marysimpson1@mousenet.com
+Anne Sinclair
+Home: 843-881-9548
+Joseph Sinclair
+Home: 843-881-9548
+E-mail: joesinc@home.com
+Harold Smalls
+Home: 843-555-3106
+Cellular: 843-778-2523
+John Smith
+Home: 502-451-8236
+Stephanie Smith
+Home: 602-832-0987
+Smith, Wesley & Brennan
+Business: 202-824-6632
+Tenli Smyth
+Home: 510-601-9852
+E-mail: tenli_smyth@home.com
+Daniel Snyder
+Home: 207-332-5849
+Fax: (919) 255-9865
+South Carolina Blood Bank
+Business: 843-723-9402
+South Carolina Transporation
+Association
+Fax: 843-786-7200
+Southern Telegraph Company
+Business: 212-566-1965
+Star Mission Shelter
+Business: 310-831-5555
+Emilio Suarez
+Home: 787-526-9874
+Summerville Land & Lumber
+Business: 843-519-2697
+Winston Tate
+Home: 401-246-5879
+Bethany Taylor
+Home: 804-556-0080
+Max Taylor
+Home: 506-683-4579
+Melanie Taylor
+Home: 804-556-9801
+Michelle Taylor
+Home: 506-683-4579
+Susan Taylor
+Home: 902-555-8525
+Emma Terrell
+Home: 204-971-5489
+Luke Thames
+Home: 604-871-2519
+The\Bean Grinder
+Business: 513-849-2231
+The\Chip 'N Dip
+Business: 914-513-9846
+The\Computer Warehouse
+Business: 425-396-1514
+The\Flower Patch
+Business: 520-184-7198
+The\Good Life Assisted Care
+Facility
+Business: 802-771-4587
+The\Reading Corner
+Business: 509-471-5454
+Alicia Thomas
+Home: 206-886-9457
+Georgia Thomas
+Home: 206-886-9457
+E-mail: georgia.thomas@nset.com
+Wendy Thomas
+Home: 206-886-9457
+Edith Thorne
+Home: 505-226-9103
+Eva Tibbetts
+Home: 740-884-9565
+Andrea Tidwell
+Home: 501-227-9144
+E-mail: tidwell1@earthnet.com
+Fax: 501-202-1839
+Meredith Tirrito
+Home: 718-780-3325
+Toy World, Inc.
+Fax: 401-253-2707
+Trapman & Associates
+Business: 937-458-9696
+Tyler & Hanson Associates
+Business: 816-849-2512
+David Underwood
+Home: 843-584-9541
+E-mail: david.underwood@snt.net
+Cynthia Urban
+Home: 919-828-5456
+E-mail: cbu@homenet.com
+Fax: (828) 698-0270
+Kelly Vaughn
+Home: 514-934-1112
+Theresa Vazquez
+Home: 802-828-1799
+E-mail: tmv@groupmail.net
+Jane Vincent
+E-mail: jlvgal@hotnet.com
+Nicholas Vincent
+Home: 407-896-1210
+Michelle Wagner
+Home: 402-474-6724
+Washington Photography
+Museum
+Business: 509-842-8104
+Wesley & Sons
+Business: 701-928-0019
+Stella White
+Home: 907-757-2221
+E-mail: stellawhite@bellnorth.com
+Norbert Wilkens
+E-mail: nwilkens@de.org
+Kate Williams
+Home: 504-561-2474
+Wilson Exterminating and Pest
+Control
+Business: 810-597-5501
+Wilson Exterminating and Pest
+Control - West Area
+Business: 810-921-4470
+Lajuan Wilson
+Home: 912-925-6645
+Fax: 912-226-8070
+Renee Wilson
+Home: 912-925-6645
+Miles Yang
+Home: 785-423-9965
+E-mail: may@msnet.com
+Christopher Young
+Home: 202-877-1125
+E-mail: doctors@net.net
+Cellular: 202-384-3349
+Fax: 202-548-3004
+Dianne Ziegler
+Home: 203-778-2523
+E-mail: daz@aom.net
