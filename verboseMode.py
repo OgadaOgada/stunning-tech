@@ -25,7 +25,7 @@ with open ("Q:\Learning\Python\stunning-tech\\"+theFile+".txt","r") as file:
     # print(content)
 
 #USING PYPERCLIP TO PASTE COPIED TEXT
-# copiedText = pyperclip.paste()
+# copiedText = pyperclip.paste() #not using in this case
 
 matchedPhoneNumbers = phoneRegex.findall(content)
 # print(matchedPhoneNumbers)

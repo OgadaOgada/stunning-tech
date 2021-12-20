@@ -1,0 +1,198 @@
+show databases;
+create database ctech;
+use ctech;
+
+create table 
+student(id int auto_increment, name varchar(20), college varchar(20), primary key(id));
+
+insert into student (name,college) values ('',''),
+('','');
+delete from student where id=null;
+
+select * from student;
+
+
+CREATE TABLE IF NOT EXISTS RESTART 
+(Student_ID INT AUTO_INCREMENT, 
+Student_Name VARCHAR(30),
+Restart_City VARCHAR(30),
+Graduation_Date datetime,
+PRIMARY KEY(Student_ID));
+
+INSERT INTO RESTART (Student_Name,Restart_City,Graduation_Date) 
+VALUES ('Felix Tokosh','Nairobi','2021-12-20 12:00:00'),
+('Vin Can','Nairobi','2021-12-20 12:00:00');
+select * from restart;
+
+CREATE TABLE IF NOT EXISTS CLOUD_PRACTITIONER 
+(Student_ID INT UNIQUE,
+Certification_date Datetime,
+FOREIGN KEY(Student_ID) references RESTART (Student_ID));
+
+insert into CLOUD_PRACTITIONER
+ values 
+ ('2021-12-31 12:00:00'),
+ ('2021-12-20 12:00:00');
+ 
+ select * from CLOUD_PRACTITIONER;
+
+SELECT RESTART.Student_ID,Student_Name,certification_date
+FROM RESTART
+INNER JOIN CLOUD_PRACTITIONER
+ON RESTART.Student_ID = CLOUD_PRACTITIONER.Student_ID;
+
+SELECT column_name(s)
+FROM table1
+LEFT JOIN table2 #returns all records from the left table (table1), and the matching records (if any) from the right table (table2).
+ON table1.column_name = table2.column_name;
+
+SELECT column_name(s)
+FROM table1
+RIGHT JOIN table2 #returns all records from the right table (table2), and the matching records (if any) from the left table (table1)
+ON table1.column_name = table2.column_name;
+
+SELECT column_name(s) #The CROSS JOIN keyword returns all records from both tables (table1 and table2)
+FROM table1
+CROSS JOIN table2;
+
+#A self join is a regular join, but the table is joined with itself.
+SELECT A.CustomerName AS CustomerName1, B.CustomerName AS CustomerName2, A.City
+FROM Customers A, Customers B
+WHERE A.CustomerID <> B.CustomerID
+AND A.City = B.City
+ORDER BY A.City;
+
+#The HAVING clause was added to SQL because the WHERE keyword cannot be used with aggregate functions
+SELECT Employees.LastName, COUNT(Orders.OrderID) AS NumberOfOrders
+FROM Orders
+INNER JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID
+WHERE LastName = 'Davolio' OR LastName = 'Fuller'
+GROUP BY LastName
+HAVING COUNT(Orders.OrderID) > 25;
+
+-- The EXISTS operator is used to test for the existence of any record in a subquery.
+-- The EXISTS operator returns TRUE if the subquery returns one or more records.
+SELECT SupplierName
+FROM Suppliers
+WHERE EXISTS (SELECT ProductName FROM Products WHERE Products.SupplierID = Suppliers.supplierID AND Price < 20);
+
+-- The ANY and ALL operators allow you to perform a comparison between a single column value and a range of other values
+SELECT column_name(s)
+FROM table_name
+WHERE column_name operator ANY
+  (SELECT column_name
+  FROM table_name
+  WHERE condition); #Note: The operator must be a standard comparison operator (=, <>, !=, >, >=, <, or <=).
+  
+  #The ALL operator:
+
+#returns a boolean value as a result
+#returns TRUE if ALL of the subquery values meet the condition
+#is used with SELECT, WHERE and HAVING statements
+#ALL means that the condition will be true only if the operation is true for all values in the range.
+SELECT column_name(s)
+FROM table_name
+WHERE column_name operator ALL
+  (SELECT column_name
+  FROM table_name
+  WHERE condition);
+
+SELECT ProductName
+FROM Products
+WHERE ProductID = ANY
+  (SELECT ProductID
+  FROM OrderDetails
+  WHERE Quantity = 10);
+  
+update student set  college='KMT' where id=1;
+
+insert into CLOUD_PRACTITIONER (Student_ID,Certification_date)
+select Student_Id, now()
+FROM RESTART
+LIMIT 5;
+
+CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    CHECK (Age>=18) #limit input to greater than or equal to 18
+);
+
+ALTER TABLE Orders
+ADD CONSTRAINT FK_PersonOrder
+FOREIGN KEY (PersonID) REFERENCES Persons(PersonID);
+
+CREATE TABLE Orders (
+    OrderID int NOT NULL,
+    OrderNumber int NOT NULL,
+    PersonID int,
+    PRIMARY KEY (OrderID),
+    CONSTRAINT FK_PersonOrder FOREIGN KEY (PersonID) #allow naming
+    REFERENCES Persons(PersonID)
+); 
+
+ALTER TABLE Orders
+DROP FOREIGN KEY FK_PersonOrder;
+
+CREATE TABLE Orders (
+    ID int NOT NULL,
+    OrderNumber int NOT NULL,
+    OrderDate date DEFAULT CURRENT_DATE()
+);
+
+ALTER TABLE Persons
+ALTER City SET DEFAULT 'Sandnes';
+
+ALTER TABLE Persons
+ALTER City DROP DEFAULT;
+
+CREATE UNIQUE INDEX index_name
+ON table_name (column1, column2, ...);
+
+CREATE INDEX index_name
+ON table_name (column1, column2, ...);
+
+ALTER TABLE table_name
+DROP INDEX index_name;
+
+ALTER TABLE Persons AUTO_INCREMENT=100;
+
+DATE - format YYYY-MM-DD
+DATETIME - format: YYYY-MM-DD HH:MI:SS
+TIMESTAMP - format: YYYY-MM-DD HH:MI:SS
+YEAR - format YYYY or YY
+
+CREATE VIEW view_name AS
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+
+CREATE VIEW [Brazil Customers] AS
+SELECT CustomerName, ContactName
+FROM Customers
+WHERE Country = 'Brazil';
+SELECT * FROM [Brazil Customers];
+
+CREATE VIEW [Products Above Average Price] AS
+SELECT ProductName, Price
+FROM Products
+WHERE Price > (SELECT AVG(Price) FROM Products);
+SELECT * FROM [Products Above Average Price];
+
+CREATE OR REPLACE VIEW [Brazil Customers] AS
+SELECT CustomerName, ContactName, City
+FROM Customers
+WHERE Country = 'Brazil';
+
+DROP VIEW [Brazil Customers];
+
+SELECT ASCII(CustomerName) AS NumCodeOfFirstChar
+FROM Customers;
+
+SELECT CHAR_LENGTH("SQL Tutorial") AS LengthOfString; 
+#same as 
+SELECT CHARACTER_LENGTH("SQL Tutorial") AS LengthOfString;
+
+SELECT CONCAT("SQL ", "Tutorial ", "is ", "fun!") AS ConcatenatedString;
+
