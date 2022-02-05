@@ -33,16 +33,28 @@ def Square_root(x,y):
     return math.sqrt(x) #returns the square root including decimal part
 
 def Cube_root(x,y):
-    return x**(1./3) #** is for exponenet/or reaised to power...raising to power a third is same as finding cube root
+    print("removed")
+    return x**(1/3) #** is for exponenet/or reaised to power...raising to power a third is same as finding cube root
 
 def Quit():
     pass
 
-def decimal_places(answer):    
-    dp = input("Decimal places? (enter number): ")
+def decimal_places(answer):
+    dp = prompt("Decimal places? (enter number): ")
     print()
-    print("{} correct to {} decimal place(s) is:\n".format(answer,dp))
-    return format(answer, ",.{}f".format(dp))+"\n"
+    if len(dp) != 0:
+        try:
+            dp = int(dp)#just ot catch the try except before it prints the next line
+            print("{} corrected to {} decimal place(s):".format(answer,dp)) #user typed an integer
+            return format(answer, ",.{}f".format(dp))+"\n"
+        except: #user typed non-integer values like alphabet, float etc
+            print("Without decimal correction")
+            return answer
+    else: #user must have pressed enter button, lenth is 0, like empty
+        print("Without decimal correction")
+        return answer
+    
+
 
 #this is a dictionary to called by a dispatcher
 my_dict = { "Addittion":Addittion,"Cube":Cube, "Subtraction":Subtraction, "Multiplication":Multiplication, 
@@ -85,7 +97,8 @@ def my_input():
                 num2 = prompt_float("Second number: ")
 
             returned_answer = call_func(predefined_func,num1,num2)
-            print(decimal_places(returned_answer))
+            print("= ",decimal_places(returned_answer)) 
+            print()        
         #user input is not right....
         else:
             print("Invalid choice")
@@ -111,6 +124,8 @@ def another_task():
         another_task()
 
 #print the items on the list from the dictionary
+#the menu items are created automatically from the dictionary...
+# to add a menu, create the function up then add a similar key value itme to the dictionary
 def my_menu():
     for i in my_list:
         print(my_list.index(i)+1,i)
