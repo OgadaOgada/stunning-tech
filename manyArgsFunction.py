@@ -1,11 +1,11 @@
 def many_args(*myInts):
-    print(len(myInts))
+    print("Total values entered",len(myInts))
     result = 0
     for x in myInts:
         result += x
     return result
 # muns = input("enter nums:")
-print(many_args(7,4,5,9))
+print("Sum of values entered",many_args(7,4,5,9))
 
 
 # check1  = False

@@ -244,11 +244,42 @@
 #         time.sleep(1)
 # print("Heads came up "+str(heads)+" times")
 
-import webbrowser, sys
+import math
+import sys
 
 # webbrowser.open("google.com")
 sys.argv #a list together with the arguments passed
 
 if len(sys.argv) >1 :
     " ".join(sys.argv[1:]) #starts at index 1 and joins the list to the end
+
+def div(a,b):
+    print(a/b)
+
+# python decorator, can change the behavior of existing function
+def smart_div(func):
+
+    def inner(a,b):
+        if a < b:
+            a,b = b,a
+        return func(a,b)
+    return inner
+
+div = smart_div(div)
+div(2,4)
+
+
+print("Adding a decorator to math.pow,\nto exponent big number to the small one")
+
+def smart_power(func):
+
+    def inner(a,b):
+        if a < b:
+            a,b = b,a
+        return func(a,b)
+
+    return inner
+
+nd = smart_power(math.pow)
+print(nd(2,5))
 

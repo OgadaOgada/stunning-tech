@@ -1,6 +1,7 @@
 
 from fileinput import filename
 import re
+from socket import herror
 from traceback import print_tb
 import openpyxl
 import os
@@ -134,7 +135,11 @@ new_excel_name = "new_excel.xlsx"
 
 more_sheets = "creating_several_worksheets.xlsx"
 deleted_sheets = []
+yes_options = ["Y","YES"]
+no_options = ["N","NO"]
 my_counter = 0
+good_bye = "Good bye dude!"
+many_attempts = "Too many attempts! Good bye."
 
 def load_file(filename):
     return openpyxl.load_workbook(filename)
@@ -144,12 +149,12 @@ def save_file(filename,loaded_file):
     return loaded_file.save(filename)
 
 #delete everything except sheet at index 0
-def delete_all_sheets(filename):
+def Delete_all_sheets(filename):
     my_excel = load_file(filename)
     sheets = my_excel.sheetnames
-    print(my_sheets(filename))
+    print(Show_sheets(filename))
     
-    user_choice = input("Are you sure to delete all sheets? (y/n)")
+    user_choice = input("Confirm to delete all sheets? (y/n)")
     if user_choice.upper == "Y":
         for sheet in sheets:
             if my_excel.worksheets.index(my_excel[sheet]) == 0:
@@ -161,15 +166,14 @@ def delete_all_sheets(filename):
     else:
         return
     
-    
 #get all sheets from the file
-def my_sheets(filename):    
+def Show_sheets(filename):    
     my_excel = load_file(filename)
-    return my_excel.sheetnames
+    return print(my_excel.sheetnames)
 
 # user defined  choice to either delete by enetering sheet name or sheet index
 def user_deletion_choice(filename):
-    print("Available sheets: ",my_sheets(filename))
+    print("Available sheets: ",Show_sheets(filename))
     user_choice = input("Delete sheet by name or index (name/index)? ")
     if user_choice.lower() == "name":
         return False
@@ -183,7 +187,7 @@ def user_deletion_choice(filename):
 def del_index(filename):
     my_excel = load_file(filename)  
     sheet_index = int(input("Enter the sheet index to delete: "))
-    all_sheets_length = len(my_sheets(filename))
+    all_sheets_length = len(Show_sheets(filename))
     # if sheet_index > all_sheets_length or sheet_index  to check how to compare to negative index
     sheet_name = my_excel.sheetnames[sheet_index]
     confirm = input("Are you sure to delete {}? (y/n) ".format(sheet_name))
@@ -198,7 +202,7 @@ def del_name(filename):
     my_excel = load_file(filename)  
      # to check if sheet name exist first
     sheet_name = input("Enter the sheet name to delete: ")
-    if sheet_name in my_sheets(filename):
+    if sheet_name in Show_sheets(filename):
     # sheet_name = my_excel.sheetnames[sheet_index]
         confirm = input("Are you sure to delete {}? (y/n) ".format(sheet_name))
         if confirm.upper() == "Y":
@@ -210,7 +214,7 @@ def del_name(filename):
         print("sheet name does not exist!")
 
 #perfom the specific delete operation
-def delete_specific(filename):
+def Delete_specific_sheet(filename):
     user_input = user_deletion_choice(filename)
     if user_input: #returned true, delete by index
         del_index(filename)
@@ -219,8 +223,8 @@ def delete_specific(filename):
     return
 
 # create user defined number of sheets
-def create_sheets(filename):
-    print(my_sheets(filename))
+def Create_sheets(filename):
+    print(Show_sheets(filename))
     num_sheets = int(input("How many sheets to create: "))
 
     #create sheets on an existing workbook
@@ -228,22 +232,22 @@ def create_sheets(filename):
     if num_sheets == 1:        
         my_excel.create_sheet("Sheet"+str(num_sheets))
         save_file(filename,my_excel)
-        print(my_sheets(filename))
+        print(Show_sheets(filename))
 
     elif num_sheets>0:
         for i in range(1,num_sheets+1):
             my_excel.create_sheet("Sheet"+str(i))
         save_file(filename,my_excel)
-        print(my_sheets(filename))
+        print(Show_sheets(filename))
     else:
         print("Invalid number!")
     return
 
-def copy_to_sheet(filename):
+def Copy_to_sheet(filename):
     # how to copy to sheet name, get index from sheet name
     # have two options, copy by index or sheet name
     my_excel = load_file(filename)
-    print(my_sheets(filename))
+    print(Show_sheets(filename))
     copy_from = int(input("Index of sheet to copy: "))
     copy_to = int(input("Index of sheet to paste to: "))
     sheet_copied = my_excel.worksheets[copy_from]
@@ -267,87 +271,74 @@ def copy_to_sheet(filename):
     print("Copied succefully from {} to {}.".format(from_name,to_name))
 
 
-def start_the_file(filename):
+def Open_the_file(filename):
     # filename.WindowState = win32.constants.xlMaximized
     # to research more on maximizing the windows after start
     return os.startfile(filename)
 
+
+def another_operation(filename):
+    another_action = input("\nPerform another action? (y/n): ").upper()
+    global my_counter #to prevent overwriting the value
+    
+    if another_action in yes_options:
+        my_counter = 0
+        return my_menu(filename)
+
+    elif another_action in no_options:
+        my_counter = 0
+        print(good_bye)
+        return quit()
+    else:
+        my_counter +=1
+        if my_counter == 3:
+            print(many_attempts)
+            quit()
+        else:
+            print("\nInvalid choice! {} attempt(s) remaining.".format(3 - my_counter))
+            return another_operation(filename)
+    
+def Rename_sheet():
+    pass
+def Enter_text():
+    pass
+def Search_pattern():
+    pass
+
+ops_dictionary = {"Show_sheets":Show_sheets,"Create_sheet":Create_sheets, "Delete_all_sheets":Delete_all_sheets, "Delete_specific_sheet":Delete_specific_sheet,
+                     "Copy_to_sheet":Copy_to_sheet, "Rename_sheet":Rename_sheet,"Enter_text":Enter_text, "Open_the_file":Open_the_file,
+                     "Search_pattern":Search_pattern}
+ops_list = list(ops_dictionary)
+
 #display the actions menu for the user
 def my_menu(filename):
-    print("\nFew Excel Actions Using Openpyxl")
-    print("_________________________________\n")
-    print("\t 1. View availabe sheets: ")
-    print("\t 2. Create more sheets: ")
-    print("\t 3. Make a copy of sheet: ")
-    print("\t 4. Rename sheet: ")
-    print("\t 5. Delete specific sheet: ")
-    print("\t 6. Delete all sheets except sheet1: ")
-    print("\t 7. Enter text to a sheet cell: ")
-    print("\t 8. Open the excel file: ")
-    print("\t 9. Open the excel file: ")
-    print("\t \nREGEX: Advanced excel ")
-    print("\t 7. Find phone numbers in all sheets: ")
-    print("\t 8. Find phone numbers in one sheets: ")
-    print("_________________________________\n")
+    print()
+    print("Operations Menu".upper())
+    for i in ops_list:
+        print(ops_list.index(i)+1,i)
+    print("_________________________________")
     print("The excel file: '{}'\n".format(filename))
-    user_actions(filename)
+    user_selection(filename)
     return 
 
-def user_actions(filename):
-    # my_menu(filename)  
-    try:  
-        user_choice = int(input("Choose an action to perform on the file: "))
-        print()
-        if user_choice == 1:
-            print(my_sheets(filename))
-        elif user_choice == 2:
-            create_sheets(more_sheets)
-        elif user_choice == 3:
-            copy_to_sheet(more_sheets)
-        elif user_choice == 4:
-            delete_specific(more_sheets)
-        elif user_choice == 5:
-            print(delete_all_sheets(more_sheets))
-        elif user_choice == 6:
-            start_the_file(more_sheets)
-        else:
-            print("Invalid selection") 
-    except Exception:
-        print("The value entered is not a number")        
-    choose_to_continue(filename)
-    return
+def func_call(func,filename):
+    try:
+        return ops_dictionary[func](filename)
 
-def choose_to_continue(filename):
-    another_action = input("\nDo you want to perform another action? (y/n): ")
-    global my_counter
-    if my_counter == 3:
-        print("Too many attempts! Good bye.")
-        quit()
-    else:
-        if another_action.upper() == "Y":
-            my_counter = 0
-            return my_menu(filename)
+    except Exception as err:
+        print("Invalid selection", err)
 
-        elif another_action.upper() == "N":
-            my_counter = 0
-            print("Good bye, see you soon!")
-            return quit()
-        else:
-            my_counter +=1
-            print("\nInvalid choice! {} attempts remaining.".format(3 - my_counter))
-            return choose_to_continue(filename)
-    
+def user_selection(filename):
+    selection = int(input("Selection: "))
+    my_function = ops_list[selection - 1] #getting the function name from a list using the entered value index
+    func_call(my_function,filename)
+    # print(my_function)
+    another_operation(filename)
 
-
-# print(my_sheets(more_sheets))
-# create_sheets(more_sheets)
-# print(my_sheets(more_sheets)) #to show the created sheets after the above line3
-
-# print(delete_all_sheets(more_sheets))
-# print(my_sheets(more_sheets))
 
 print("TO WORK ON HOW TO CLOSE OPENED EXCEL FILES")
-print("to change copied successfully to sheet blah blah")
-# choose_to_continue(more_sheets)
-# my_menu(more_sheets)
-# user_deletion_choice()
+# print("CHANGE THE FUNCTION NAME TO DICTIONARY FOR EASY CREATION") done
+# another_operation(more_sheets)
+print()
+my_menu(more_sheets)
+# user_selection(filename)

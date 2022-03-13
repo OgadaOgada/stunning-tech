@@ -13,8 +13,7 @@ for guessesTaken in range(1, 7):
         if attempts == 6:
             message = "Take a guess, you have " + str(attempts) + " attempts."
         elif attempts > 1:
-            message = "Try again, you have " + \
-                str(attempts)+" attempts remaining."
+            message = "Try again, you have "+str(attempts)+" attempts remaining."
         else:
             message = "Your last attempt."
 
@@ -35,4 +34,4 @@ if guess == secretNumber:
     print("Good job "+name+"! You guessed my number in " +
           str(guessesTaken)+" guesses")
 else:
-    print("Nope. The number I was thingking of was "+str(guessesTaken))
+    print("Nope. The number I was thingking of was "+str(secretNumber))

@@ -1,10 +1,13 @@
+
 from selenium import webdriver
 import time, os
+import pyperclip
 os.chdir(r"Q:\Learning\Python\stunning-tech")
 # print(os.getcwd())
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.keys import Keys
 
 
 # userinput = input("What to search: ")
@@ -33,12 +36,14 @@ from selenium.webdriver.support import expected_conditions as EC
 # name="btnK" type="submit" data-ved="0ahUKEwjjhrv9v5r1AhXiyIUKHdhOCQUQ4dUDCAs">
 # """
 
-# browser = webdriver.Chrome(
-#     executable_path=r"Q:\Learning\Python\stunning-tech\chrome_driver\chromedriver.exe")
-# # browser.maximize_window()
-# browser.get("https://web.whatsapp.com/")
-executable_path=r"Q:\Learning\Python\stunning-tech\chrome_driver\chromedriver.exe"
-os.opendir(executable_path)
+browser = webdriver.Chrome(
+    executable_path="Q:\Learning\Python\stunning-tech\chrome_driver\chromedriver.exe")
+# browser.maximize_window()
+browser.get("https://web.whatsapp.com/")
+
+# executable_path="Q:\Learning\Python\stunning-tech\chrome_driver"
+# os.startfile(executable_path) #open/start the folder/application in the specified path
+
 with open("groups.txt", "r", encoding="utf8") as f:
     groups = [group.strip() for group in f.readlines()]
 
@@ -46,19 +51,24 @@ with open("message.txt", "r",encoding="utf8") as f:
     msg = f.read()
 # time.sleep(30)
 
-# for group in groups:
-#     # pass
-#     print("should wait for 500secs")
-#     search_xpath = "//div[@contenteditable='true'][@data-tab='3']"
-#     # '//*[@id="side"]/div[1]/div/label/div/div[2]'
-#     try:
-#         search_box = WebDriverWait(browser,500).until(
-#             EC.presence_of_element_located((By.XPATH, search_xpath))
-#         )
-#         print("search box loaded and wait complete")
-#         search_box.send_keys(group)
-#         print("should search for the first group")
-#     except Exception as error:
-#         print("Issue: ",error)
+for group in groups:
+    # pass
+    search_xpath = "//div[@contenteditable='true'][@data-tab='3']"
+    # '//*[@id="side"]/div[1]/div/label/div/div[2]'
+    try:
+        search_box = WebDriverWait(browser,500).until(
+            EC.presence_of_element_located((By.XPATH, search_xpath))
+        )
+
+        search_box.clear()
+
+        pyperclip.copy(group)
+    # print("Pasted",pyperclip.paste())
+        search_box.send_keys(Keys.CONTROL+"v") # Keys.SHIFT, Keys.INSERT for mac
+        
+        # group_xpath =
+        # group_title = 
+    except Exception as error:
+        print("Issue: ",error)
         
 
