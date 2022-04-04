@@ -283,3 +283,4 @@ def smart_power(func):
 nd = smart_power(math.pow)
 print(nd(2,5))
 
+
