@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "705961297086",
+    "project_id": "auth-8cbf1",
+    "storage_bucket": "auth-8cbf1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705961297086:android:404c25a33df0cfb3774aef",
+        "android_client_info": {
+          "package_name": "com.collince.firebaseuserlogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705961297086-9utfs0clk5os2f9rdm9vn98mckvpel1m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsaqGvXXrgXE10bsFr2zfcefau8coEvOE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "705961297086-9utfs0clk5os2f9rdm9vn98mckvpel1m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
